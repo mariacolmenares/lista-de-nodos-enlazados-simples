@@ -1,0 +1,15 @@
+http://replit.com/DaSb/11
+#maria colmenares
+#unefa 2016
+# Metodo que busca si un valor existe en la lista 
+	def busca_valor (self, valor):
+		
+		nodo  = self.__primero
+		pos=0
+		while (nodo != None) :
+			if (nodo.info== valor):
+				return "el numero",valor,"si se encuentra en la lista"
+			nodo=nodo.sig
+			pos=pos+1
+		if(self.__n == pos ):
+			return "el numero",valor,"no se encuentra en la lista"
