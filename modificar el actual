@@ -1,0 +1,15 @@
+#maria colmenares
+#unefa 2016
+http://replit.com/DaSb/11
+# Metodo para ubicar en actual en la posicion "pos" (enviada por parametro)
+	def pos_actual(self, valor):
+		pos=0	
+		self.__pos=valor
+		nodo=self.__primero
+		while(nodo!= None):
+			if(pos == valor):
+				
+				self.__actual=nodo
+				
+			nodo=nodo.sig
+			pos=pos+1
