@@ -1,0 +1,22 @@
+# lista-de-nodos-enlazados-simples
+#MARIA COLMENARES 
+#UNEFA 2016
+	# Metodo para eliminar el primer elemento de la lista
+	def elimina_primero(self):
+		
+		if (self.__primero == None):
+			return "la lista esta vacia"
+
+		nodotemp = self.__primero
+		self.__primero = self.__primero.sig
+		del nodotemp
+		self.__n = self.__n - 1
+		
+		if (self.__n == 0):
+			self.__ultimo = None
+			self.__actual = None
+			
+		if (self.__pos == 0):
+			self.__primero=self.__actual
+		else:
+			self.__pos=self.__pos -1
